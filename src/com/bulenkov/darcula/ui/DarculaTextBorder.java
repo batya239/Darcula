@@ -61,6 +61,8 @@ public class DarculaTextBorder implements Border, UIResource {
       DarculaUIUtil.paintFocusRing(g, 2, 2, width - 4, height - 4);
     } else {
       boolean editable = !(c instanceof JTextComponent) || (((JTextComponent)c).isEditable());
+      g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+      g.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_DEFAULT);
       g.setColor(c.isEnabled() && editable ? Gray._100 : new Color(0x535353));
       g.drawRect(1, 1, width - 2, height - 2);
     }

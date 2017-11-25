@@ -58,7 +58,7 @@ public class DarculaButtonUI extends BasicButtonUI {
           ((Graphics2D)g).setPaint(new GradientPaint(0, 0, getButtonColor1(), 0, c.getHeight(), getButtonColor2()));
         }
       }
-      g.fillRoundRect(square ? 2 : 4, yOff, c.getWidth() - 2 * 4, c.getHeight() - 2 * yOff, square ? 3 : 5, square ? 3 : 5);
+      g.fillRoundRect(square ? 2 : 1, yOff, c.getWidth() - 2, c.getHeight() - 2 * yOff, square ? 3 : 5, square ? 3 : 5);
     }
     config.restore();
     super.paint(g, c);

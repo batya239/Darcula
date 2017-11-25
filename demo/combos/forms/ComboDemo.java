@@ -15,7 +15,7 @@ public class ComboDemo {
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Container contentPane = f.getContentPane();
 
-        JLabel label = new JLabel();
+        JCheckBox label = new JCheckBox();
         JComboBox comboBox = new JComboBox();
         JTextField textField = new JTextField();
         JComboBox comboBox2 = new JComboBox();
@@ -36,6 +36,7 @@ public class ComboDemo {
         comboBox4.setModel(new DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         GroupLayout layout = new GroupLayout(contentPane);
         contentPane.setLayout(layout);
+
         layout.setHorizontalGroup(
                 layout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
